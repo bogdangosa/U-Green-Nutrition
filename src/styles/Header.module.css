@@ -1,0 +1,28 @@
+.header{
+    height: 7rem;
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Logo{
+    height: 5rem;
+    object-fit: contain;
+}
+
+.NavBar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1.4rem;
+    list-style-type: none;
+}
+
+.NavLink{
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--color-text-primary);
+}
