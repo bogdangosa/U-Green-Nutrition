@@ -1,0 +1,15 @@
+.IntoleranceCard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color-text-secondary);
+    color: var(--color-background);
+    padding: 0.5rem 1rem;
+    border-radius: 10rem;
+    -webkit-border-radius: 10rem;
+    -moz-border-radius: 10rem;
+    -ms-border-radius: 10rem;
+    -o-border-radius: 10rem;
+    width: fit-content;
+    gap: 0.5rem;
+}

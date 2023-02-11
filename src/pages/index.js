@@ -3,10 +3,13 @@ import Image from 'next/image'
 import { Inter } from '@next/font/google'
 import styles from '@/styles/Home.module.css'
 import SimpleButton from '@/components/Buttons/SimpleButton'
+import { useRouter } from 'next/router'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const router = useRouter();
+
   return (
     <>
       <Head>
@@ -20,7 +23,7 @@ export default function Home() {
               <div className={styles.hero_text_container}>
                   <h1 className={styles.HeroTitle}>Find the perfect diet plan for your needs</h1>
                   <p className={styles.HeroSubTitle}>Fusce erat leo, tincidunt ut orci non, lobortis posuere risus. Donec maximus odio in orci maximus posuere. Aenean nec tincidunt lorem.</p>
-                  <SimpleButton>Start Now</SimpleButton>
+                  <SimpleButton onClick={()=>router.push("/Generate")}>Start Now</SimpleButton>
               </div>
               <div className={styles.hero_Image_container}>
                 <img src="hero_background.svg"></img>
